@@ -1,0 +1,24 @@
+/* Carousel styles */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  contain: layout style paint;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+.carousel-slide {
+  flex-shrink: 0;
+}
+
+/* Modal styles to ensure independence */
+#modal {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 9999 !important;
+}
